@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Nembak Kamu 💖</title>
+    <style>
+        body {
+            background: #ffe6f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+        }
+        h1 {
+            color: #ff4d6d;
+        }
+        img {
+            width: 150px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+        #no {
+            background-color: #999;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hai wanita cantik 💕</h1>
+    <img src="https://www.boostyourpersonaldevelopment.com/wp-content/uploads/2020/01/Love-Love.jpg" alt="Love">
+    <h2>Maukah kamu jadi pacarku? 💖</h2>
+
+    <button id="yes" onclick="yes()">Mau 💘</button>
+    <button id="no" onmouseover="moveNo()">Gamau 😝</button>
+
+    <script>
+        function yes() {
+            alert("kita resmi jadian yah ❤️");
+        }
+
+        function moveNo() {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 50);
+            const noBtn = document.getElementById("no");
+            noBtn.style.left = x + "px";
+            noBtn.style.top = y + "px";
+        }
+    </script>
+
+</body>
+</html>
